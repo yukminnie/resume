@@ -1,0 +1,20 @@
+/* 
+1, 清除浮动display写成了none
+2, topNavBar拼写成topNavbar
+3, li后面跟了ol
+*/
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.topNavBar > nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topNavBar nav ul li {
+    float: left;
+}
