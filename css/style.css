@@ -9,6 +9,10 @@
     clear: both;
 }
 
+a {
+    text-decoration: none;
+}
+
 .topNavBar > nav > ul {
     list-style: none;
     padding: 0;
@@ -25,7 +29,6 @@
     font-size: 12px;
     color: #b7b7b7;
     font-weight: bold;
-    text-decoration: none;
     border-bottom: 3px solid transparent;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -41,4 +44,18 @@
 
 .topNavBar > a {
     float: left;
+}
+
+.topNavBar .logo {
+    font-family: "Arial Black";
+    font-size: 24px;
+}
+
+.topNavBar .logo .rs {
+    color: #e6686a;
+    margin-right: 4px;
+}
+
+.topNavBar .logo .card {
+    color: #9a9da2;
 }
