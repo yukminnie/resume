@@ -3,6 +3,10 @@
 2, topNavBar拼写成topNavbar
 3, li后面跟了ol
 */
+body {
+    margin: 0;
+}
+
 .clearfix::after {
     content: '';
     display: block;
@@ -11,6 +15,14 @@
 
 a {
     text-decoration: none;
+}
+
+.topNavBar {
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px; */
+    padding: 20px 16px 20px 16px;
 }
 
 .topNavBar > nav > ul {
