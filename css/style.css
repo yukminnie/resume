@@ -22,10 +22,18 @@ a {
     padding-bottom: 20px;
     padding-left: 16px;
     padding-right: 16px; */
-    padding: 20px 16px 20px 16px;
+    padding: 20px 0px 20px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.topNavBar-inner {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.topNavBar > nav > ul {
+.topNavBar nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -74,4 +82,8 @@ a {
 
 .topNavBar .logo .card {
     color: #9a9da2;
+}
+
+.banner {
+    height: 515px;
 }
