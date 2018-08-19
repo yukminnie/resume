@@ -5,6 +5,7 @@
 */
 body {
     margin: 0;
+    background-color: #eeeeee;
 }
 
 .clearfix::after {
@@ -94,4 +95,11 @@ a {
 .banner .mask {
     height: 515px;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.userCard {
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: #fff;
+
 }
