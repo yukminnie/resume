@@ -101,5 +101,29 @@ a {
     max-width: 940px;
     margin: 0 auto;
     background-color: #fff;
+}
 
+.welcome {
+    background: #e6686a;
+    color: #fff;
+    display: inline-block;
+    /* display: inline-block;
+    width: 70px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center; */
+    padding: 4px 16px;
+    line-height: 22px;
+    position: relative;
+}
+
+.triangle {
+    display: block;
+    border: 10px solid transparent;
+    width: 0;
+    border-left-color: #e6686a;
+    border-top-width: 0;
+    position: absolute;
+    left: 4px;
+    top: 100%;
 }
