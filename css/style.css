@@ -86,4 +86,12 @@ a {
 
 .banner {
     height: 515px;
+    background-image: url(../img/rs-cover.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner .mask {
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.8);
 }
