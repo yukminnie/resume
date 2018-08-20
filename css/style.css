@@ -316,3 +316,22 @@ h1,h2,h3,h4,h5,h6 {
 .protfolio ul:nth-child(1) {
     margin-left: 0;
 }
+
+/*
+另外一种居中的实现方法
+.protfolio ol {
+    text-align: center;
+}
+
+.protfolio ul {
+    display: inline-block;
+    vartical-align: top;
+    margin-left: 40px;
+}
+
+.protfolio ul:nth-child(1) {
+    margin-left: 0;
+}
+
+
+*/
