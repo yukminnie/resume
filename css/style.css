@@ -236,3 +236,23 @@ hr {
     line-height: 1.8;
     margin-top: 30px;
 }
+
+.skill {
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.skill h2 {
+    color: #3d4451;
+    text-align: center;
+    font-size: 34;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.skill ol {
+    background: white;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
+
+}
