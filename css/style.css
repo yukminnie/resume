@@ -263,6 +263,7 @@ h1,h2,h3,h4,h5,h6 {
     background: white;
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
     padding: 42px 50px 10px;
+    margin-top: 30px;
 }
 
 .skill h3 {
@@ -273,7 +274,12 @@ h1,h2,h3,h4,h5,h6 {
 
 .skill li {
     float: left;
-    width: 50%;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.skill li:nth-child(even) {
+    float: right;
 }
 
 .progressBar {
