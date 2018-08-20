@@ -182,10 +182,24 @@ hr {
     text-align: center;
 }
 
+.userCard footer a{
+    /* border: 1px solid black; */
+    display: inline-block;
+    width: 40px;
+    line-height: 30px;
+    padding: 5px 0;
+    border-radius: 50%;
+    margin: 16px;
+}
+
+.userCard footer a:hover {
+    background: #cf5d5f;
+}
+
 .userCard svg {
     width: 30px;
     height: 30px;
     fill: white;
-    margin: 0 10px;
+    margin: 0 5px;
     vertical-align: top;
 }
