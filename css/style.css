@@ -176,3 +176,16 @@ hr {
     width: 70%;
     color: #9da0a7;
 }
+
+.userCard footer {
+    background: #e6686a;
+    text-align: center;
+}
+
+.userCard svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    margin: 0 10px;
+    vertical-align: top;
+}
