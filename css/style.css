@@ -5,7 +5,7 @@
 */
 body {
     margin: 0;
-    background-color: #eeeeee;
+    background: #efefef;
 }
 
 .clearfix::after {
@@ -203,4 +203,20 @@ hr {
     fill: white;
     margin: 0 5px;
     vertical-align: top;
+}
+
+.downloadResume-wrapper {
+    text-align: center;
+}
+
+.downloadResume {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3d4451;
+    border-radius: 2px;
+    line-height: 16px;
+    padding: 21px 55px;
+    border: 1px solid #cdcfd1;
+    display: inline-block;
+    margin-top: 32px;
 }
