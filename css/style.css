@@ -164,7 +164,8 @@ hr {
 .userCard dl dt,
 .userCard dl dd {
     float: left;
-    padding: 5px 0;
+    padding: 10px 0;
+    font-size: 12px;
 }
 
 .userCard dl dt {
