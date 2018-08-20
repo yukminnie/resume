@@ -1,4 +1,4 @@
-/* 
+/*
 1, 清除浮动display写成了none
 2, topNavBar拼写成topNavbar
 3, li后面跟了ol
@@ -159,4 +159,20 @@ hr {
 
 .text hr {
     margin: 20px 0;
+}
+
+.userCard dl dt,
+.userCard dl dd {
+    float: left;
+    padding: 5px 0;
+}
+
+.userCard dl dt {
+    width: 30%;
+    font-weight: bold;
+}
+
+.userCard dl dd {
+    width: 70%;
+    color: #9da0a7;
 }
