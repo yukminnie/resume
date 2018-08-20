@@ -226,3 +226,13 @@ hr {
 .downloadResume:hover{
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
 }
+
+.profile {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: kai;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
