@@ -245,13 +245,15 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 30px;
 }
 
-.skill {
+.skill,
+.protfolio {
     max-width: 940px;
     margin: 0 auto;
     margin-top: 60px;
 }
 
-.skill h2 {
+.skill h2,
+.protfolio h2 {
     color: #3d4451;
     text-align: center;
     font-size: 34;
@@ -294,4 +296,23 @@ h1,h2,h3,h4,h5,h6 {
     background: #e6686a;
     border-radius: 2px;
     width: 70%;
+}
+
+.protfolio nav {
+    text-align: center;
+}
+
+.protfolio ol {
+    border: 1px solid red;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.protfolio ul {
+    float: left;
+    margin-left: 40px;
+}
+
+.protfolio ul:nth-child(1) {
+    margin-left: 0;
 }
