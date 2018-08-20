@@ -305,10 +305,12 @@ h1,h2,h3,h4,h5,h6 {
 .protfolio nav {
     text-align: center;
     display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
 }
 
 .protfolio ol {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: inline-block;
     vertical-align: top;
 }
@@ -316,6 +318,7 @@ h1,h2,h3,h4,h5,h6 {
 .protfolio ul {
     float: left;
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .protfolio ul:nth-child(1) {
@@ -340,5 +343,30 @@ h1,h2,h3,h4,h5,h6 {
 */
 
 .bar {
-    border: 1px solid black;
+    height: 5px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+.bar-inner {
+    height: 100%;
+    background: #e6686a;
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+
+.bar.state-1 .bar-inner {
+    margin-left: 0;
+    width: 50px;
+}
+
+.bar.state-2 .bar-inner {
+    margin-left: 65px;
+    width: 50px;
+}
+
+.bar.state-3 .bar-inner {
+    margin-left: 120px;
+    width: 60px;
 }
