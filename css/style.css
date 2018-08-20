@@ -14,8 +14,19 @@ body {
     clear: both;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 a {
     text-decoration: none;
+}
+
+hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid #dedede;
 }
 
 .topNavBar {
@@ -126,4 +137,26 @@ a {
     position: absolute;
     left: 4px;
     top: 100%;
+}
+
+.picture {
+    float:left;
+}
+
+.text {
+    float: left;
+    margin-left: 65px;
+    width: 470px;
+}
+
+.pictureAndText {
+    padding: 50px;
+}
+
+.text h1 {
+    margin-top: 18px;
+}
+
+.text hr {
+    margin: 20px 0;
 }
