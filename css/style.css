@@ -29,6 +29,14 @@ hr {
     border-top: 1px solid #dedede;
 }
 
+li {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
 .topNavBar {
     /* padding-top: 20px;
     padding-bottom: 20px;
@@ -254,5 +262,30 @@ hr {
 .skill ol {
     background: white;
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
+    padding: 42px 50px 10px;
+}
 
+.skill h3 {
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+}
+
+.skill li {
+    float: left;
+    width: 50%;
+}
+
+.progressBar {
+    height: 3px;
+    background: #fae1e1;
+    border-radius: 2px;
+    margin: 4px 0 40px;
+}
+
+.progress {
+    height: 100%;
+    background: #e6686a;
+    border-radius: 2px;
+    width: 70%;
 }
