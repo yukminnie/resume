@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>我的简历</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loading.css">
     <script src="//at.alicdn.com/t/font_800548_pn1msj7fj6h.js"></script>
     <style type="text/css">
     .icon {
@@ -17,6 +18,9 @@
 </head>
 
 <body>
+    <div id="siteWelcome" class="siteWelcome active">
+        <div class="loading"></div>
+    </div>
     <div class="topNavBar">
         <div class="topNavBar-inner clearfix">
             <a href="" class="logo" alt='logo'>
@@ -217,6 +221,12 @@
         </div>
     </section>
 
+    <script>
+    // 貌似class选择器在js中不会生效, 需要使用id选择器, 将siteWlcome设为id
+        setTimeout(function() {
+            siteWelcome.classList.remove('active')
+        }, 2000)
+    </script>
 </body>
 
 </html>
