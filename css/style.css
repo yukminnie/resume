@@ -395,3 +395,14 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     display: flex;
 }
+
+/* 逐帧动画才是animation */
+.topNavBar {
+    transition: all 0.5s;
+}
+
+.topNavBar.sticky {
+    background: white;
+    padding: 10px 0;
+    z-index: 1;
+}
