@@ -50,13 +50,47 @@ for (let i = 0; i < ulTags.length; i++) {
 
 let liTags = document.querySelectorAll('nav > ul > li > a')
 
+function animate(time) {
+    requestAnimationFrame(animate);
+    TWEEN.update(time);
+}
+requestAnimationFrame(animate);
+
 for (let i = 0; i < liTags.length; i++) {
     liTags[i].onclick = function(x) {
         x.preventDefault()
         let href = x.currentTarget.getAttribute('href')
-        log(href)
         let element = document.querySelector(href)
         let top = element.offsetTop
-        window.scrollTo(0, top - 80)
+        // window.scrollTo(0, top - 80)
+
+        // let n = 25
+        // let duration = 500 / n
+        // let currentTop = window.scrollY
+        // let targetTop = top - 80
+        // let distance = (targetTop - currentTop) / n
+        // let i = 0
+        // let id = setInterval(()=> {
+        //     if(i===n) {
+        //         window.clearInterval(id)
+        //         return
+        //     }
+        //     i = i + 1
+        //     window.scrollTo(0, currentTop + distance * i)
+        // },duration
+        //
+        // )
+
+        let currentTop = window.scrollY
+        let targetTop = top - 80
+        let s = targetTop - currentTop
+        var coords = { y: currentTop};
+        var tween = new TWEEN.Tween(coords)
+        .to({ y: targetTop }, 1000)
+        .easing(TWEEN.Easing.Quadratic.InOut)
+        .onUpdate(function() {
+            window.scrollTo(0, coords.y)
+        })
+        .start();
     }
 }
