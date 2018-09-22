@@ -67,7 +67,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .topNavBar nav ul li a {
     font-size: 12px;
-    color: #b7b7b7;
+    /* color: #b7b7b7; */
+    color: inherit;
     font-weight: bold;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
@@ -399,6 +400,7 @@ h1,h2,h3,h4,h5,h6 {
 /* 逐帧动画才是animation */
 .topNavBar {
     transition: all 0.5s;
+    color: #b7b7b7;
 }
 
 .topNavBar.sticky {
@@ -406,4 +408,5 @@ h1,h2,h3,h4,h5,h6 {
     padding: 10px 0;
     z-index: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #3d4451;
 }
