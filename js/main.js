@@ -41,9 +41,22 @@ let ulTags = document.querySelectorAll('nav > ul > li')
 
 for (let i = 0; i < ulTags.length; i++) {
     ulTags[i].onmouseenter = function(x) {
-        let li = x.currentTarget.classList.add('active')
+        let ul = x.currentTarget.classList.add('active')
     }
     ulTags[i].onmouseleave = function(x) {
-        let li = x.currentTarget.classList.remove('active')
+        let ul = x.currentTarget.classList.remove('active')
     }
     }
+
+let liTags = document.querySelectorAll('nav > ul > li > a')
+
+for (let i = 0; i < liTags.length; i++) {
+    liTags[i].onclick = function(x) {
+        x.preventDefault()
+        let href = x.currentTarget.getAttribute('href')
+        log(href)
+        let element = document.querySelector(href)
+        let top = element.offsetTop
+        window.scrollTo(0, top - 80)
+    }
+}
