@@ -78,7 +78,7 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
 }
 
-.topNavBar nav ul li a:hover::after {
+.topNavBar nav ul li.active a::after {
     /* border-bottom: 3px solid #e06567; */
     position: absolute;
     content: '';
@@ -451,7 +451,7 @@ h1,h2,h3,h4,h5,h6 {
     left: 0;
 }
 
-.subMenu.active {
+.topNavBar li.active .subMenu {
     display: block;
 }
 

@@ -22,18 +22,28 @@ var log = console.log.bind(console)
 //
 // }
 
-let liTags = document.getElementsByClassName('menuSlide')
+// let liTags = document.getElementsByClassName('menuSlide')
+//
+// for (let i = 0; i < liTags.length; i++) {
+//     liTags[i].onmouseenter = function(x) {
+//         let li = x.currentTarget
+//         // 没有明白这里为什么获取了一个数组
+//         let brother = li.getElementsByTagName('ul')[0]
+//         brother.classList.add('active')
+//     }
+//     liTags[i].onmouseleave = function(x) {
+//         let li = x.currentTarget
+//         let brother = li.getElementsByTagName('ul')[0]
+//         brother.classList.remove('active')
+//     }
+//     }
+let ulTags = document.getElementsByClassName('menuSlide')
 
-for (let i = 0; i < liTags.length; i++) {
-    liTags[i].onmouseenter = function(x) {
-        let li = x.currentTarget
-        // 没有明白这里为什么获取了一个数组
-        let brother = li.getElementsByTagName('ul')[0]
-        brother.classList.add('active')
+for (let i = 0; i < ulTags.length; i++) {
+    ulTags[i].onmouseenter = function(x) {
+        let li = x.currentTarget.classList.add('active')
     }
-    liTags[i].onmouseleave = function(x) {
-        let li = x.currentTarget
-        let brother = li.getElementsByTagName('ul')[0]
-        brother.classList.remove('active')
+    ulTags[i].onmouseleave = function(x) {
+        let li = x.currentTarget.classList.remove('active')
     }
     }
