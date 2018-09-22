@@ -453,8 +453,22 @@ h1,h2,h3,h4,h5,h6 {
 
 .topNavBar li.active .subMenu {
     display: block;
+    background: white;
+    color: #3d4451;
+    animation: subMenuSlide 0.3s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 
 .subMenu li {
     white-space: nowrap;
+    padding: 5px 5px;
+}
+
+@keyframes subMenuSlide {
+    0%{
+        margin-left: 100%;
+    }
+    100%{
+        margin-left: 0%:
+    }
 }
