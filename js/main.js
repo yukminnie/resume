@@ -37,7 +37,7 @@ var log = console.log.bind(console)
 //         brother.classList.remove('active')
 //     }
 //     }
-let ulTags = document.getElementsByClassName('menuSlide')
+let ulTags = document.querySelectorAll('nav > ul > li')
 
 for (let i = 0; i < ulTags.length; i++) {
     ulTags[i].onmouseenter = function(x) {
